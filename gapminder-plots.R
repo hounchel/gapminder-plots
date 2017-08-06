@@ -16,3 +16,13 @@ ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
 ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
   geom_point(aes(color=continent)) +
   stat_smooth(method=lm)
+
+ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point(aes(color=continent)) +
+  scale_x_log10() +
+  stat_smooth(method=lm)
+
+ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point(aes(color=continent)) +
+  scale_x_log10() +
+  stat_smooth(method=lm, color = "red")
