@@ -9,3 +9,6 @@ gapminder <- gapminder_FiveYearData
 
 ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
   geom_point()
+
+ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point(aes(color=continent))
